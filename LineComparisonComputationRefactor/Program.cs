@@ -7,15 +7,32 @@ namespace LineComparisonComputationRefactor
         public static void LineComparison()
         {
             Console.WriteLine(" Welcome To Line Comparison Computation Program ");
-            //Coordinates
-            double x1 = Convert.ToDouble(Console.ReadLine());
-            double y1 = Convert.ToDouble(Console.ReadLine());
-            double x2 = Convert.ToDouble(Console.ReadLine());
-            double y2 = Convert.ToDouble(Console.ReadLine());
+            //Coordinates of Line1
+            double x1x = Convert.ToDouble(Console.ReadLine());
+            double y1x = Convert.ToDouble(Console.ReadLine());
+            double x2x = Convert.ToDouble(Console.ReadLine());
+            double y2x = Convert.ToDouble(Console.ReadLine());
 
-            double squareX = (x2 - x1) * (x2 - x1);
-            double squareY = (y2 - y1) * (y2 - y1);
-            Console.WriteLine($" Length of a Line: { Math.Sqrt(squareX + squareY) }");
+            //Coordinates of Line2
+            double x1y = Convert.ToDouble(Console.ReadLine());
+            double y1y = Convert.ToDouble(Console.ReadLine());
+            double x2y = Convert.ToDouble(Console.ReadLine());
+            double y2y = Convert.ToDouble(Console.ReadLine());
+            double squareXx = (x2x - x1x) * (x2x - x1x);
+            double squareYx = (y2x - y1x) * (y2x - y1x);
+            double squareXy = (x2y - x1y) * (x2y - x1y);
+            double squareYy = (y2y - y1y) * (y2y - y1y);
+            double lengthOfLine1 = Math.Sqrt(squareXx + squareYx);
+            double lengthOfLine2 = Math.Sqrt(squareXy + squareYy);
+
+            if (lengthOfLine1 == lengthOfLine2)
+            {
+                Console.WriteLine("Length of Two Lines are Equal");
+            }
+            else
+            {
+                Console.WriteLine("Length of Two Lines are not Equal");
+            }
         }
 
         static void Main(string[] args)
