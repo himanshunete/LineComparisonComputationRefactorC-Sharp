@@ -33,7 +33,6 @@ namespace LineComparisonComputationRefactor
             {
                 Console.WriteLine("Length of Line1 is Greater than Line 2 ");
             }
-
             else if (lengthOfLine1 < lengthOfLine2)
             {
                 Console.WriteLine("Length of Line1 is lesser than Line 2 ");
