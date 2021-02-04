@@ -67,7 +67,6 @@ namespace LineComparisonComputationRefactor
             double x2y = Convert.ToDouble(Console.ReadLine());
             double y2y = Convert.ToDouble(Console.ReadLine());
 
-
             LineComparison(x1x, y1x, x2x, y2x, x1y, y1y, x2y, y2y);
 
         }
